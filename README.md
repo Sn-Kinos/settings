@@ -15,4 +15,4 @@ brew bundle
 
 # ZSH Install
 
-##`p10k` setting or download `.p10k.zsh`
+## `p10k` setting or download `.p10k.zsh`
