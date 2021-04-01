@@ -18,7 +18,7 @@ brew bundle
 ## Download `~/.zshrc`
 
 ## Download `~/.p10k.zsh` or Run `p10k configure`
-> `powerline/p10k` already installed with `brew bundle`
+> `powerlevel10k/p10k` already installed with `brew bundle`
 
 If You don't want to download it, Do configure
 ```zsh
