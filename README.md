@@ -1,7 +1,7 @@
 # settings
 My Develop Environment Settings
 
-# Brew Install
+# Brew
 
 ## Install Brew
 ```zsh
@@ -13,7 +13,7 @@ My Develop Environment Settings
 brew bundle
 ```
 
-# ZSH Install
+# ZSH
 
 ## Download `.zshrc`
 
