@@ -8,19 +8,19 @@ My Develop Environment Settings
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Run `brew bundle` with `Brewfile`
+## Run `brew bundle` with `~/Brewfile`
 ```zsh
 brew bundle
 ```
 
 # ZSH
 
-## Download `.zshrc`
+## Download `~/.zshrc`
 
-## Download `.p10k.zsh` or Run `p10k configure`
-> `p10k` already installed with `brew bundle`
+## Download `~/.p10k.zsh` or Run `p10k configure`
+> `powerline/p10k` already installed with `brew bundle`
 
-If You don't download `.p10k.zsh`, Do configure
+If You don't want to download it, Do configure
 ```zsh
 p10k configure
 ```
