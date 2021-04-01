@@ -17,7 +17,7 @@ brew bundle
 
 ## Download `.zshrc`
 
-## Download `.p10k.zsh` or `p10k configure`
+## Download `.p10k.zsh` or Run `p10k configure`
 > `p10k` already installed with `brew bundle`
 
 If You don't download `.p10k.zsh`, Do configure
