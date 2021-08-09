@@ -1,5 +1,5 @@
 # settings
-My Develop Environment Settings
+My Development Environment Settings
 
 # Brew
 
