@@ -147,4 +147,7 @@ export PATH="$DENO_INSTALL/bin:$PATH"
 alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
-export EDITOR=/usr/local/bin/nvim
+export EDITOR=$(which nvim)
+
+
+eval $(thefuck --alias)
