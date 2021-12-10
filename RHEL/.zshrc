@@ -5,8 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
@@ -14,13 +12,13 @@ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
 export PATH=$HOME/.nvm:/opt/homebrew/bin:$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/dragon/.oh-my-zsh"
+export ZSH="/home/$USER/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-# ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -128,7 +126,7 @@ source $ZSH/oh-my-zsh.sh
 #[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # Deno Settings
-export DENO_INSTALL="/Users/dragon/.deno"
+export DENO_INSTALL="/Users/$USER/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
 # ZSH autojump
@@ -148,5 +146,3 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=$(which nvim)
-
-eval $(thefuck --alias)
