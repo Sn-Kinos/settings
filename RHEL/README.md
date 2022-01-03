@@ -30,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ### Install thefuck
 ```bash
-sudo pip3 install thefuck
+pip3 install thefuck --user
 ```
 
 ### Set ZSH to default shell
