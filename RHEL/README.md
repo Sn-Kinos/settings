@@ -10,7 +10,7 @@ sudo dnf update
 
 ### Install Requirements
 ```
-sudo dnf install zsh autojump-zsh neovim git python3-devel
+sudo dnf install zsh autojump-zsh neovim git python3-devel gcc
 ```
 
 ## ZSH Settings
