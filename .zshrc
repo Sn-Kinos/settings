@@ -149,5 +149,43 @@ alias vi="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=$(which nvim)
 
-
+# thefuck
 eval $(thefuck --alias)
+
+# Modern Unix
+alias ls=lsd
+alias du=dust
+alias df=duf
+
+# Kubernertes
+source <(kubectl completion zsh)
+alias k=kubectl
+compdef __start_kubectl k
+
+# Minikube
+# source <(minikube completion zsh)
+# alias miku=minikube
+# compdef __start_minikube miku
+
+# Helm
+source <(helm completion zsh)
+alias hl=helm
+compdef _helm hl
+
+# Argo Workflows
+source <(argo completion zsh)
+compdef _argo argo
+
+# Argo CD
+source <(argocd completion zsh)
+compdef _argocd argocd
+
+# tabtab source for packages
+# uninstall by removing these lines
+[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# Terraform
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
