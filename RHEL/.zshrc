@@ -146,3 +146,29 @@ alias vim="nvim"
 alias vi="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=$(which nvim)
+
+# To use Modern-Linux
+alias df=duf
+alias du=dust
+
+# Kubernetes
+source <(kubectl completion zsh)
+alias k=kubectl
+compdef __start_kubectl k
+alias kga="k get all --all-namespaces"
+
+# Helm
+source <(helm completion zsh)
+alias hl=helm
+compdef _helm hl
+
+# Argo Workflows
+source <(argo completion zsh)
+compdef _argo argo
+
+# Argo CD
+source <(argocd completion zsh)
+compdef _argocd argocd
+
+# thefuck
+eval $(thefuck --alias)
