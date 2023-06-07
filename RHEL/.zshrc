@@ -152,23 +152,33 @@ alias df=duf
 alias du=dust
 
 # Kubernetes
+if command -v kubectl; then
 source <(kubectl completion zsh)
 alias k=kubectl
 compdef __start_kubectl k
 alias kga="k get all --all-namespaces"
+fi
 
 # Helm
+if command -v helm; then
 source <(helm completion zsh)
 alias hl=helm
 compdef _helm hl
+fi
 
 # Argo Workflows
+if command -v argo; then
 source <(argo completion zsh)
 compdef _argo argo
+fi
 
 # Argo CD
+if command -v argocd; then
 source <(argocd completion zsh)
 compdef _argocd argocd
+fi
 
 # thefuck
+if command -v thefuck; then
 eval $(thefuck --alias)
+fi
